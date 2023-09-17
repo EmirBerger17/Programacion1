@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(67, 67, 67);
+}
+header{
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    top: 0;
+}
+#contenedorcarrito{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#contenedorcarrito img{
+    max-width: 60px;
+    max-height: 60px;
+}
+.contadorcarrito{
+    background-color: red;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    color: white;
+    min-width: 20px;
+    text-align: center;
+}
+#carrito{
+    cursor: pointer;
+}
+.contadorprecio{
+    padding-left: 12px;
+    font-size: 19px;
+    color: white;
+}
+h1{
+    font-size: 70px;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    color: white;
+}
+#filtro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+#filtro p{
+    text-align: center;
+    padding: 0 5px;
+    margin: 0 1px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(45, 45, 45);
+}
+#filtro p:hover{
+    background-color: rgba(110, 110, 110, 0.53);
+}
+#contenedorproductos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.divproductos{
+    box-shadow: 0 4px 8px 0 rgba(171, 171, 171, 0.2);
+    max-width: 400px;
+    height: 617px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.divproductos img{
+    margin-top: 10px;
+    width: 90%;
+    height: 400px;
+    cursor: pointer;
+}
+.divproductos h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.divproductos p{
+    margin-bottom: 10px;
+}
+.divproductos :nth-child(5){
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-style: oblique;
+}
+.agregar{
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+#ventanacarrito{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 85%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.headercarrito{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.headercarrito h1{
+    font-size: 40px;
+    width: 97%;
+    align-items: center;
+    padding-left: 15px;
+}
+.headercarrito p{
+    cursor: pointer;
+    width: 30px;
+    font-size: 30px;
+    justify-content: right;
+    padding-top: 10px;
+}
+.cuerpocarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+.cuerpocarrito img{
+    height: 100px;
+    width: 100px;
+}
+.restar{
+    cursor: pointer;
+    font-size: 30px;
+}
+.restar:hover{
+    color: blue;
+}
+.sumar{
+    cursor: pointer;
+    font-size: 30px;
+}
+.sumar:hover{
+    color: green;
+}
+.eliminar{
+    font-size: 15px;
+    cursor: pointer;
+}
+.eliminar:hover{
+    color: red;
+}
+.footercarrito{
+    border-top: 1px solid white;
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.footercarrito p{
+    font-size: 22px;
+    width: 85%;
+}
+.footercarrito button{
+    margin-left: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+}
+.footercarrito button:hover{
+    color: rgb(3, 92, 3);
+}
+.check{
+    width: 40%;
+    margin: 0 30%;
+    max-height: 85%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.check h2{
+    margin-top: 0;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+.form label{
+    font-size: 20px;
+}
+.form input{
+    width: 100%;
+    margin: 10px 0;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.form input::placeholder{
+    color: rgba(0, 0, 0, 0.58);
+}
+.check button{
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+}
+.check button:hover{
+    background-color: gray;
+}
+
+.degradado{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.detalle img{
+    width: 50%;
+    margin: 0 25%;
+    border-radius: 25px;
+}
+.cerrardetalle{
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cerrardetalle:hover{
+    color: red;
+}
+#banner{
+    width: 40%;
+    margin: 0% 30%;
+    height: 40%;
+    color: white;
+    background-color: rgb(198, 198, 198);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    top: 30vh;
+    scrollbar-color: none;
+    border-radius: 2px;
+}
+.cerrarbanner{
+    color: black;
+    float: right;
+    font-size: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.cerrarbanner:hover{
+    color: red;
+}
+.degradadobanner{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
