@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 1</title>
+    <script src="tp1.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>TRABAJO PRACTICO 1</h1>
+        </header>
+        <div class="ejercicios">
+            <h2>Ejercicio 1</h2>
+            <h3>Roliplus</h3>
+            <button id="roliplusproductos" onclick="ro.verProductosRoli();">Ver Productos</button>
+            <div id="inforoliplus"></div>
+        </div>
+        <div class="ejercicios">
+            <h2>Ejercicio 2</h2>
+            <h3>Texit</h3>
+            <div id="formulario">
+                <form method="post" action="#">
+                    <label>Codigo</label><input id="codigoproducto" type="number" maxlength="45" required><br/>
+                    <label>Nombre</label><input id="nombreproducto" type="text" maxlength="45" required><br/>
+                    <label>Categoría</label><input id="categoriaproducto" type="text" maxlength="45" required><br/>
+                    <label>Precio</label><input id="precioproducto" type="number" maxlength="20" required><br/>
+                    <label>Descripción</label><input id="descripcionproducto" type="text" maxlength="200" required><br/>
+                </form>
+                <button id="guardardatostexit" onclick="pr.cargarProductoTexit();">Cargar producto</button>
+                <button id="verproductostexit" onclick="pr.verProductosTexit();">Ver Productos</button>
+            </div>
+            <div id="infotexit"></div>
+        </div>
+        <div class="ejercicios">
+            <h2>Ejercicio 3</h2>
+            <h3>Noblex</h3>
+            <button id="vertelevisores" onclick="nb.verTelevisores();">Ver televisores</button>
+            <button id="ordenar" onclick="nb.ordenarTelevisores();">Ordenar</button>
+            <div id="infotv"></div>
+            <div id="ordentv"></div>
+        </div>
+    </div>
+</body>
+</html>
